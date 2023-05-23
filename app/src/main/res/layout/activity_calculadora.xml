@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculadoraActivity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:text="Calculadora"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/lblCalculadora">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblCalculadora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/lblUsuario"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:text="Usuario"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp">
+
+        </TextView>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblUsuario"
+        android:id="@+id/txtNum1"
+        android:inputType="numberDecimal"
+        android:hint="Número 1"
+        android:textAlignment="textStart"
+        android:layout_margin="10dp">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNum1"
+        android:id="@+id/txtNum2"
+        android:inputType="numberDecimal"
+        android:hint="Número 2"
+        android:textAlignment="textStart"
+        android:layout_margin="10dp">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNum2"
+        android:id="@+id/lblResultado"
+        android:textSize="20dp"
+        android:textColor="#4CAF50"
+        android:layout_margin="10dp"
+        android:textAlignment="center">
+
+    </TextView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnRestar"
+        app:layout_constraintTop_toBottomOf="@id/lblResultado"
+        android:id="@+id/btnSumar"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btnSumar"
+        app:layout_constraintEnd_toEndOf="@id/btnMultiplicar"
+        app:layout_constraintTop_toBottomOf="@id/lblResultado"
+        android:id="@+id/btnRestar"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btnRestar"
+        app:layout_constraintEnd_toEndOf="@id/btnDividir"
+        app:layout_constraintTop_toBottomOf="@id/lblResultado"
+        android:id="@+id/btnMultiplicar"
+        android:text="x"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/btnMultiplicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblResultado"
+        android:id="@+id/btnDividir"
+        android:text="÷"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:layout_margin="10dp">
+
+    </Button>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnRegresar"
+        android:id="@+id/btnLimpiar"
+        android:text="Limpiar"
+        android:layout_marginTop="250dp">
+
+    </Button>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/btnRegresar"
+        android:text="Regresar"
+        android:layout_margin="20dp">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
